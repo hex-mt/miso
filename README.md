@@ -2,8 +2,6 @@
   <img src="banner.svg" alt="Miso logo" width="305">
 </h1>
 
-# Miso, a modular isomorphic keyboard
-
 <div align="center">
   <img src="concept.svg" alt="Concept diagram" width="600">
 </div>
