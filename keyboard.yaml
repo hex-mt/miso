@@ -1,57 +1,59 @@
 units:
-  o: 0.1339745962u # 1 - (sqrt(3) / 2)
+  o: 0.1339745962155614u # 1 - (sqrt(3) / 2)
   p: .5u + o
 points:
   zones:
     matrix:
       columns:
-        b:
+        extra-before:
           rows:
-            double-sharp.skip: true
-            natural.skip: true
-            flat.skip: true
-            double-flat.skip: true
+            third.skip: true
+            fourth.skip: true
+            fifth.skip: true
+          key.stagger: p
+        A:
+          rows:
+            fifth.skip: true
+          key.stagger: p
+        B:
+          rows:
+            first.skip: true
           key.stagger: p
         C:
           rows:
-            flat.skip: true
-            double-flat.skip: true
+            fifth.skip: true
           key.stagger: -p
         D:
           key.stagger: p
         E:
           rows:
-            double-sharp.skip: true
+            first.skip: true
           key.stagger: p
         F:
           rows:
-            double-flat.skip: true
+            fifth.skip: true
           key.stagger: -p
         G:
-          key.stagger: p
-        A:
-          key.stagger: p
-        B:
           rows:
-            sharp.skip: true
-            double-sharp.skip: true
+            first.skip: true
+            second.skip: true
           key.stagger: p
-        c:
+        extra-after:
           rows:
-            double-sharp.skip: true
-            sharp.skip: true
-            natural.skip: true
-            double-flat.skip: true
+            first.skip: true
+            second.skip: true
+            third.skip: true
+            fifth.skip: true
           key.stagger: -p
       rows:
-        double-flat:
-        flat:
+        fifth:
+        fourth:
           shift: [0, 2o]
-        natural:
+        third:
           shift: [0, 2o]
-        sharp:
+        second:
           shift: [0, 2o]
-        double-sharp:
+        first:
           shift: [0, 2o]
   rotate: -17
 outlines:
@@ -59,7 +61,7 @@ outlines:
     - what: rectangle
       where: true
       bound: false
-      size: [13.8, 13.8]
+      size: [14.0, 14.0]
   preview:
     - what: outline
       name: keys
