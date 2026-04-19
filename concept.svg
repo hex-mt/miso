@@ -1,4 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="521.31" height="598.94" viewBox="0 0 137.93 158.47">
+  <style>
+    .themed {
+      fill: #000000;
+      stroke: #000000;
+    }
+    @media (prefers-color-scheme: dark) {
+      .themed {
+        fill: #ffffff;
+        stroke: #ffffff;
+      }
+    }
+  </style>
   <g stroke="#000" stroke-linecap="square" stroke-width=".27" paint-order="markers stroke fill">
     <path fill="#ffff4c" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 153.57 61.84)scale(.578)"/>
     <path fill="#ffff4c" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 169.75 99.86)scale(.578)"/>
@@ -50,7 +62,7 @@
   </g>
   <text xml:space="preserve"
         x="184.78" y="188.41"
-        fill="currentColor"
+        class="themed"
         stroke-linecap="square"
         stroke-width=".09"
         font-family="'IBM Plex Sans'"
@@ -58,12 +70,12 @@
         font-weight="600"
         letter-spacing="-.14"
         paint-order="markers stroke fill"
-        style="-inkscape-stroke:hairline;line-height:1.2"
+        style="line-height:1.2"
         transform="translate(-66.04 -64.44)">
     <tspan x="184.78" y="188.41">...</tspan>
   </text>
 
-  <path fill="currentColor"
+  <path class="themed"
         d="M73.75 81.9H71V70.2h-4.08v11.7h-2.74l4.78 8.28z"
         paint-order="markers stroke fill"/>
 </svg>
