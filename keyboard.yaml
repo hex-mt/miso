@@ -1,0 +1,66 @@
+units:
+  o: 0.1339745962u # 1 - (sqrt(3) / 2)
+  p: .5u + o
+points:
+  zones:
+    matrix:
+      columns:
+        b:
+          rows:
+            double-sharp.skip: true
+            natural.skip: true
+            flat.skip: true
+            double-flat.skip: true
+          key.stagger: p
+        C:
+          rows:
+            flat.skip: true
+            double-flat.skip: true
+          key.stagger: -p
+        D:
+          key.stagger: p
+        E:
+          rows:
+            double-sharp.skip: true
+          key.stagger: p
+        F:
+          rows:
+            double-flat.skip: true
+          key.stagger: -p
+        G:
+          key.stagger: p
+        A:
+          key.stagger: p
+        B:
+          rows:
+            sharp.skip: true
+            double-sharp.skip: true
+          key.stagger: p
+        c:
+          rows:
+            double-sharp.skip: true
+            sharp.skip: true
+            natural.skip: true
+            double-flat.skip: true
+          key.stagger: -p
+      rows:
+        double-flat:
+        flat:
+          shift: [0, 2o]
+        natural:
+          shift: [0, 2o]
+        sharp:
+          shift: [0, 2o]
+        double-sharp:
+          shift: [0, 2o]
+  rotate: -17
+outlines:
+  keys:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [13.8, 13.8]
+  preview:
+    - what: outline
+      name: keys
+      operation: stack
