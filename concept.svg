@@ -12,28 +12,28 @@
     }
   </style>
   <g stroke="#000" stroke-linecap="square" stroke-width=".27" paint-order="markers stroke fill">
-    <path fill="#ffff4c" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 153.57 61.84)scale(.578)"/>
-    <path fill="#ffff4c" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 169.75 99.86)scale(.578)"/>
-    <path fill="#4cff4c" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 194.59 66.84)scale(.578)"/>
-    <path fill="#33bcff" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 235.6 71.84)scale(.578)"/>
-    <path fill="#ffc066" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 112.55 56.84)scale(.578)"/>
-    <path fill="#ffc066" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 128.73 94.87)scale(.578)"/>
+    <path fill="#eed49f" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 153.57 61.84)scale(.578)"/>
+    <path fill="#eed49f" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 169.75 99.86)scale(.578)"/>
+    <path fill="#a6da95" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 194.59 66.84)scale(.578)"/>
+    <path fill="#8aadf4" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 235.6 71.84)scale(.578)"/>
+    <path fill="#f5a97f" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 112.55 56.84)scale(.578)"/>
+    <path fill="#f5a97f" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 128.73 94.87)scale(.578)"/>
     <path fill="#f99" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 102.75 308)scale(.578)"/>
     <path fill="#f99" d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 87.71 89.87)scale(.578)"/>
-    <g fill="#ffff4c">
+    <g fill="#eed49f">
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 144.91 132.9)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 161.1 170.93)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 177.27 208.92)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 152.43 241.96)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 168.61 280)scale(.578)"/>
     </g>
-    <g fill="#4cff4c">
+    <g fill="#a6da95">
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 185.93 137.89)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 202.11 175.92)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 193.45 246.95)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 178.41 28.82)scale(.578)"/>
     </g>
-    <g fill="#33bcff">
+    <g fill="#8aadf4">
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 226.95 142.88)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 218.29 213.95)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 210.77 104.87)scale(.578)"/>
@@ -41,12 +41,12 @@
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 234.46 251.94)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 219.43 33.82)scale(.578)"/>
     </g>
-    <g fill="#ffc066">
+    <g fill="#f5a97f">
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 120.07 165.9)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 136.25 203.93)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 127.59 274.96)scale(.578)"/>
     </g>
-    <g fill="#f99">
+    <g fill="#ed8796">
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 79.05 160.9)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 103.9 127.89)scale(.578)"/>
       <path d="M75.1 116.22h-9.99l-5-8.66 5-8.65h10l5 8.65z" transform="rotate(13.9 111.41 236.97)scale(.578)"/>
