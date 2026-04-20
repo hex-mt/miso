@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="331.96" height="255.37" version="1.1" viewBox="0 0 87.801 67.55" xmlns="http://www.w3.org/2000/svg">
- <style>.themed {
+ <style>
+   .themed {
       fill: #000000;
       stroke-width: 0;
     }
@@ -9,27 +10,51 @@
         fill: #ffffff;
         stroke-width: 0;
       }
-    }</style>
+    }
+    @keyframes colorCycle {
+      0%   { fill: #ed8796; }
+      5%   { fill: #ed8796; }
+      16%  { fill: #f5a97f; }
+      21%  { fill: #f5a97f; }
+      33%  { fill: #eed49f; }
+      38%  { fill: #eed49f; }
+      49%  { fill: #a6da95; }
+      54%  { fill: #a6da95; }
+      66%  { fill: #8aadf4; }
+      71%  { fill: #8aadf4; }
+      82%  { fill: #c6a0f6; }
+      87%  { fill: #c6a0f6; }
+      100% { fill: #ed8796; }
+    }
+    .row {
+      animation: colorCycle 10s linear infinite;
+    }
+    .row-first { animation-delay: -6.6s; }
+    .row-second { animation-delay: -4.9s; }
+    .row-third { animation-delay: -3.3s; }
+    .row-fourth { animation-delay: -1.6s; }
+    .row-fifth { animation-delay: 0s; }
+    </style>
  <g transform="translate(.0056395)">
   <path d="m21.04 0.2-3.8 4-5.6-1.4-5.7 5.9 1.6 5.5-4 4.2 2.3 7.9 5.6 1.4 1 3.2-4.2 4.1 2.3 8 5.6 1.3 1.6 5.6 8 2 4-4.2 3.2 0.8 1.6 5.5 8 2 4-4.1 5.6 1.3 4-4.1 3.2 0.8 1.6 5.5 8 2 4-4.2 5.6 1.4 5.7-5.9-2.3-7.9-5.6-1.4-0.9-3.2 4-4.1-2.3-8-5.6-1.3-0.9-3.2 4-4.2-2.1-7.9-8-2-4 4.2-3.2-0.8-1.6-5.5-8-2-4 4.1-5.6-1.3-4 4.1-3.2-0.8-1.7-5.5-8-2z" fill="#cad3f5" style="paint-order:markers stroke fill"/>
   <path d="m21.04 0.2-3.8 4-5.6-1.4-5.7 5.9 1.6 5.5-4 4.2 2.3 7.9 5.6 1.4 1 3.2-4.2 4.1 2.3 8 5.6 1.3 1.6 5.6 8 2 4-4.2 3.2 0.8 1.6 5.5 8 2 4-4.1 5.6 1.3 4-4.1 3.2 0.8 1.6 5.5 8 2 4-4.2 5.6 1.4 5.7-5.9-2.3-7.9-5.6-1.4-0.9-3.2 4-4.1-2.3-8-5.6-1.3-0.9-3.2 4-4.2-2.1-7.9-8-2-4 4.2-3.2-0.8-1.6-5.5-8-2-4 4.1-5.6-1.3-4 4.1-3.2-0.8-1.7-5.5-8-2z" fill="#cad3f5" style="paint-order:markers stroke fill"/>
-  <g fill="#8aadf4" stroke="#5b6078" stroke-linecap="square" stroke-width="2">
+  <g class="row row-first" stroke="#5b6078" stroke-linecap="square" stroke-width="2">
    <path d="m25.14 13.5-5.6-1.5-1.6-5.6 4-4.1 5.6 1.4 1.6 5.6zm16.8 4.1-5.6-1.4-1.6-5.5 4-4.2 5.6 1.5 1.6 5.5zm16.8 4.2-5.6-1.4-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5z" style="paint-order:markers stroke fill"/>
    <path d="m32.34 20.4-5.6-1.4-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5zm19.2-5.6-5.6-1.4-1.6-5.4 4-4.2 5.6 1.4 1.6 5.6zm16.8 4.2-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.5zm-52.8-2.8-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.6z" style="paint-order:markers stroke fill"/>
   </g>
  </g>
  <g stroke="#5b6078" stroke-linecap="square">
-  <g transform="translate(.0056395)" fill="#a6da95" stroke-width="2">
+  <g class="row row-second" transform="translate(.0056395)" stroke-width="2">
    <path d="m22.74 23.2-5.6-1.4-1.6-5.6 4-4.1 5.6 1.3 1.6 5.6zm16.8 4.1-5.6-1.3-1.6-5.5 4-4.2 5.6 1.4 1.6 5.6zm9.6-2.8-5.6-1.3-1.6-5.6 4-4.2 5.6 1.4 1.6 5.6zm16.8 4.2-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.5z" style="paint-order:markers stroke fill"/>
    <path d="m13.14 26-5.6-1.6-1.6-5.4 4-4.2 5.6 1.4 1.6 5.6z" style="paint-order:markers stroke fill"/>
   </g>
-  <g transform="translate(.0056395)" fill="#eed49f" stroke-width="2">
+  <g class="row row-third" transform="translate(.0056395)" stroke-width="2">
    <path d="m20.34 32.9-5.6-1.4-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5z" style="paint-order:markers stroke fill"/>
    <path d="m29.94 30-5.6-1.3-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5zm7.2 7-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.6z" style="paint-order:markers stroke fill"/>
    <path d="m46.74 34.2-5.6-1.2-1.6-5.7 4-4.2 5.6 1.4 1.6 5.6zm9.6-2.7-5.6-1.5-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5zm7.2 6.9-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.5z" style="paint-order:markers stroke fill"/>
    <path d="m73.14 35.6-5.6-1.3-1.6-5.6 4-4.2 5.6 1.5 1.7 5.6z" style="paint-order:markers stroke fill"/>
   </g>
-  <g transform="translate(.0056395)" fill="#f5a97f">
+  <g class="row row-fourth" transform="translate(.0056395)">
    <path d="m17.94 42.6-5.6-1.4-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5z" stroke-width="2.03" style="paint-order:markers stroke fill"/>
    <path d="m27.54 39.8-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.5z" stroke-width="2.03" style="paint-order:markers stroke fill"/>
    <g stroke-width="2" style="paint-order:markers stroke fill">
@@ -39,7 +64,7 @@
   </g>
  </g>
  <g transform="translate(.0056395)" stroke-linecap="square">
-  <g fill="#ed8796" stroke="#5b6078">
+  <g class="row row-fifth" stroke="#5b6078">
    <path d="m77.94 52.3-5.6-1.4-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5zm-52.8-2.8-5.6-1.4-1.6-5.5 4-4.2 5.6 1.4 1.6 5.5z" stroke-width="2.03" style="paint-order:markers stroke fill"/>
    <g stroke-width="2">
     <path d="m41.94 53.7-5.6-1.4-1.6-5.6 4-4.1 5.6 1.4 1.6 5.5z" style="paint-order:markers stroke fill"/>
