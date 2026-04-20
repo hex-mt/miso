@@ -10,4 +10,4 @@ If you need to tinker with `keyboard.yaml`, here's a couple of links that will h
 
 This editor makes working with Ergogen much easier, as you can get instand feedback and autocompletion suggestions when typing.
 
-- [https://docs.ergogen.xyz/](Official Ergogen documentation)
+- [Official Ergogen documentation](https://docs.ergogen.xyz/)
