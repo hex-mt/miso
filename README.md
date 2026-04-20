@@ -2,6 +2,11 @@
   <img src="graphics/banner.svg" alt="Miso logo" width="380">
 </h1>
 
+<h2 align="center">
+  Website (soon) |
+  <a href="https://discord.gg/8pfwVQCf33">Chat</a>
+</h1>
+
 **Miso** is a modular, isomorphic musical keyboard designed to make exploring alternative tuning systems and microtonality more accessible.
 
 It’s an open-source hardware project built around small, repeatable units: each Miso block is a 31-key keyboard that can stand alone or connect with others to form a larger instrument.
