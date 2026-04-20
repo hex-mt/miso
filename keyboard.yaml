@@ -1,6 +1,8 @@
 units:
-  o: 0.1339745962155614u # 1 - (sqrt(3) / 2)
-  p: .5u + o
+  k: 0.8660254037844386 # sqrt(3)/2
+  spacing: (1 - k)u # 1 - (sqrt(3) / 2)
+  stagger: .5u + spacing/2
+  spread: (u + spacing)k
 points:
   zones:
     matrix:
@@ -10,52 +12,60 @@ points:
             third.skip: true
             fourth.skip: true
             fifth.skip: true
-          key.stagger: p
+          key.stagger: stagger
         A:
           rows:
             fifth.skip: true
-          key.stagger: p
+          key.stagger: stagger
+          key.spread: spread
         B:
           rows:
             first.skip: true
-          key.stagger: p
+          key.stagger: stagger
+          key.spread: spread
         C:
           rows:
             fifth.skip: true
-          key.stagger: -p
+          key.stagger: -stagger
+          key.spread: spread
         D:
-          key.stagger: p
+          key.stagger: stagger
+          key.spread: spread
         E:
           rows:
             first.skip: true
-          key.stagger: p
+          key.stagger: stagger
+          key.spread: spread
         F:
           rows:
             fifth.skip: true
-          key.stagger: -p
+          key.stagger: -stagger
+          key.spread: spread
         G:
           rows:
             first.skip: true
             second.skip: true
-          key.stagger: p
+          key.stagger: stagger
+          key.spread: spread
         extra-after:
           rows:
             first.skip: true
             second.skip: true
             third.skip: true
             fifth.skip: true
-          key.stagger: -p
+          key.stagger: -stagger
+          key.spread: spread
       rows:
         fifth:
         fourth:
-          shift: [0, 2o]
+          shift: [0, spacing]
         third:
-          shift: [0, 2o]
+          shift: [0, spacing]
         second:
-          shift: [0, 2o]
+          shift: [0, spacing]
         first:
-          shift: [0, 2o]
-  rotate: -17
+          shift: [0, spacing]
+  rotate: 0
 outlines:
   keys:
     - what: rectangle
