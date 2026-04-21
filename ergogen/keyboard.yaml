@@ -1,8 +1,12 @@
 units:
+  # scale_factor to control key sizing. 1.5 ~= 22.5mm spacing between adjacent keys.
+  scale_factor: 1.5
+  
   k: 0.8660254037844386 # sqrt(3)/2
-  spacing: (1 - k)u # 1 - (sqrt(3) / 2)
+  spacing: scale_factor * (1 - k)u
   stagger: .5u + spacing/2
   spread: (u + spacing)k
+  hex: (spread + spacing)/2 + 0.175
 points:
   zones:
     matrix:
@@ -65,14 +69,29 @@ points:
           shift: [0, spacing]
         first:
           shift: [0, spacing]
-  rotate: 0
+  # rotate: -13.9
 outlines:
+  raw:
+    - what: polygon
+      where:
+        # - matrix_D_second
+        - true
+      bound: false
+      points:
+        - shift: [-hex/2k, hex]
+        - shift: [hex/k, 0]
+        - shift: [hex/2k, -hex]
+        - shift: [-hex/2k, -hex]
+        - shift: [-hex/k, 0]
+        - shift: [-hex/2k, hex]
   keys:
     - what: rectangle
       where: true
       bound: false
       size: [14.0, 14.0]
   preview:
+    - what: outline
+      name: raw
     - what: outline
       name: keys
       operation: stack
