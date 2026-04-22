@@ -21,29 +21,23 @@ Traditional keyboards are great, but a very awkward and limiting interface for t
 
 ## Features
 
-### Modular design
+**Modular design.** Each Miso unit is a self-contained block. Connect multiple blocks together to scale up your instrument. This allows for a low initial investment in something that can be expanded gradually over time.
 
-Each Miso unit is a self-contained block. Connect multiple blocks together to scale up your instrument. This allows for a low initial investment in something that can be expanded gradually over time.
+**Isomorphic layout.** Miso isn't just for microtonal music—isomorphic layouts are useful even in 12-tone equal temperament!
 
-### Isomorphic layout
+**Velocity sensitive.** Uses the same low-cost, widely available Hall effect key switches found in modern gaming keyboards. Hot-swappable so you can try different switches or easily replace any that become defective.
 
-Miso isn't just for microtonal music—isomorphic layouts are useful even in 12-tone equal temperament!
+**MIDI controller.** Plug into your compuler via USB-C and play with your favourite software instruments.
 
-### Velocity sensitive
+**Fully open-source.** PCB designs, 3D-printable case, and keycaps are all available—build it yourself or modify it to suit your needs.
 
-Uses the same low-cost, widely available Hall effect key switches found in modern gaming keyboards. Hot-swappable so you can try different switches or easily replace any that become defective.
+**Community-driven.** No single point of failure. Contributions, forks, and experiments are all encouraged.
 
-### MIDI controller
+## Roadmap
 
-Plug into your compuler via USB-C and play with your favourite software instruments.
-
-### Fully open-source
-
-PCB designs, 3D-printable case, and keycaps are all available—build it yourself or modify it to suit your needs.
-
-### Community-driven
-
-No single point of failure. Contributions, forks, and experiments are all encouraged.
+<div align="center">
+  <img src="graphics/roadmap.svg" alt="Concept diagram" width="1200">
+</div>
 
 ## License
 
