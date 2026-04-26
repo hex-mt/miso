@@ -1,74 +1,62 @@
 units:
-  # scale_factor to control key sizing. 1.5 ~= 22.5mm spacing between adjacent keys.
-  scale_factor: 1.5
+  spacing: 22.5
   
-  k: 0.8660254037844386 # sqrt(3)/2
-  spacing: scale_factor * (1 - k)u
-  stagger: .5u + spacing/2
-  spread: (u + spacing)k
-  hex: (spread + spacing)/2 + 0.175
+  k: 1.73205080757 # sqrt(3)
+  spread: spacing * k / 2
+  stagger: spacing / 2
+  hex_x: spacing / 2k
+  hex_y: spacing / 2
 points:
   zones:
     matrix:
+      key.spread: spread
+      key.padding: spacing
       columns:
-        extra-before:
+        extra_before:
           rows:
             third.skip: true
             fourth.skip: true
             fifth.skip: true
-          key.stagger: stagger
         A:
+          key.stagger: stagger
           rows:
             fifth.skip: true
-          key.stagger: stagger
-          key.spread: spread
         B:
+          key.stagger: stagger
           rows:
             first.skip: true
-          key.stagger: stagger
-          key.spread: spread
         C:
+          key.stagger: -stagger
           rows:
             fifth.skip: true
-          key.stagger: -stagger
-          key.spread: spread
         D:
           key.stagger: stagger
-          key.spread: spread
         E:
-          rows:
-            first.skip: true
-          key.stagger: stagger
-          key.spread: spread
-        F:
+          key.stagger: -stagger
           rows:
             fifth.skip: true
-          key.stagger: -stagger
-          key.spread: spread
+        F:
+          key.stagger: stagger
+          rows:
+            fifth.skip: true
         G:
+          key.stagger: stagger
           rows:
             first.skip: true
             second.skip: true
+        extra_after:
           key.stagger: stagger
-          key.spread: spread
-        extra-after:
           rows:
             first.skip: true
             second.skip: true
             third.skip: true
-            fifth.skip: true
-          key.stagger: -stagger
-          key.spread: spread
+            fourth.skip: true
       rows:
         fifth:
         fourth:
-          shift: [0, spacing]
         third:
-          shift: [0, spacing]
         second:
-          shift: [0, spacing]
         first:
-          shift: [0, spacing]
   # rotate: -13.9
 outlines:
   raw:
@@ -78,12 +66,12 @@ outlines:
         - true
       bound: false
       points:
-        - shift: [-hex/2k, hex]
-        - shift: [hex/k, 0]
-        - shift: [hex/2k, -hex]
-        - shift: [-hex/2k, -hex]
-        - shift: [-hex/k, 0]
-        - shift: [-hex/2k, hex]
+        - shift: [-hex_x, hex_y]
+        - shift: [2*hex_x, 0]
+        - shift: [hex_x, -hex_y]
+        - shift: [-hex_x, -hex_y]
+        - shift: [-2*hex_x, 0]
+        - shift: [-hex_x, hex_y]
   keys:
     - what: rectangle
       where: true
