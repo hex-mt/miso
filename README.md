@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img src="graphics/banner.svg" alt="Miso logo" width="380">
+  <img src="website/public/banner.svg" alt="Miso logo" width="380">
 </h1>
 
 <h2 align="center">
-  Website (soon) |
+  <a href="https://hex-mt.github.io/miso">Website</a> |
   <a href="https://discord.gg/8pfwVQCf33">Chat</a>
 </h1>
 
@@ -12,7 +12,7 @@
 It’s an open-source hardware project built around small, repeatable units: each Miso block is a 31-key keyboard that can stand alone or connect with others to form a larger instrument.
 
 <div align="center">
-  <img src="graphics/concept.svg" alt="Concept diagram" width="420">
+  <img src="website/public/concept.svg" alt="Concept diagram" width="420">
 </div>
 
 ## Why Miso?
@@ -36,7 +36,7 @@ Traditional keyboards are great, but a very awkward and limiting interface for t
 ## Roadmap
 
 <div align="center">
-  <img src="graphics/roadmap.svg" alt="Concept diagram" width="1200">
+  <img src="website/public/roadmap.svg" alt="Concept diagram" width="1200">
 </div>
 
 ## License

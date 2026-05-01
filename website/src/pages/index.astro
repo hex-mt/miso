@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <header class="flex h-dvh flex-col items-center justify-center gap-6 px-6 text-center">
+    <img src="/miso/banner.svg" alt="Miso" class="w-64 sm:w-80 md:w-96 lg:w-xl" />
+  </header>
+
+  <main class="mx-auto max-w-4xl px-6 pb-16">
+    <p class="text-xl text-ctp-subtext1">
+      A modular, isomorphic musical keyboard for exploring alternative tuning
+      systems and microtonality.
+    </p>
+    <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        { title: 'Modular', color: 'text-ctp-blue', body: 'Each Miso unit is a self-contained 31-key block. Connect multiples together to scale up your instrument at your own pace.' },
+        { title: 'Isomorphic', color: 'text-ctp-green', body: "An isomorphic layout means every interval always looks the same, no matter which key you're in." },
+        { title: 'Velocity Sensitive', color: 'text-ctp-peach', body: 'Uses low-cost Hall effect switches found in modern gaming keyboards — hot-swappable and easy to replace.' },
+        { title: 'MIDI Controller', color: 'text-ctp-pink', body: 'Plug in via USB-C and play with your favourite software instruments instantly.' },
+        { title: 'Open Source', color: 'text-ctp-teal', body: 'PCB designs, 3D-printable case, and keycaps are all available. Build it yourself or make it your own.' },
+        { title: 'Community Driven', color: 'text-ctp-lavender', body: 'No single point of failure. Contributions, forks, and experiments are all encouraged.' },
+      ].map(({ title, color, body }) => (
+        <div class="rounded-2xl bg-ctp-surface0 p-6">
+          <h2 class={`mb-2 text-lg font-semibold ${color}`}>{title}</h2>
+          <p class="text-ctp-subtext0 text-sm leading-relaxed">{body}</p>
+        </div>
+      ))}
+    </section>
+
+    <footer class="mt-16 text-center text-sm text-ctp-overlay0">
+      <p>
+        MIT License &middot; <a href="https://discord.gg/8pfwVQCf33" class="text-ctp-mauve hover:text-ctp-lavender transition-colors">Join the Discord</a>
+      </p>
+    </footer>
+  </main>
+</Layout>

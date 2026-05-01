@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Miso',
+  description = 'A modular, isomorphic musical keyboard for exploring alternative tuning systems and microtonality.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="macchiato">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-ctp-base text-ctp-text min-h-screen font-sans antialiased">
+    <slot />
+  </body>
+</html>
