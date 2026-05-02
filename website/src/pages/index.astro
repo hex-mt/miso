@@ -3,9 +3,45 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <header class="flex h-dvh flex-col items-center justify-center gap-6 px-6 text-center">
-    <img src="/miso/banner.svg" alt="Miso" class="w-64 sm:w-80 md:w-96 lg:w-xl" />
+  <header class="relative flex h-dvh flex-col items-center justify-center gap-6 px-6 text-center overflow-hidden" style="background-color:#956ab1">
+    <svg class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true">
+      <defs>
+        <pattern id="symbol-tile" x="0" y="0" width="450" height="450"
+                 patternUnits="userSpaceOnUse"
+                 patternTransform="rotate(-16.1)">
+          <image href="/miso/symbols.svg" x="0" y="0" width="450" height="450"/>
+        </pattern>
+      </defs>
+      <rect id="symbol-rect" width="100%" height="100%" fill="url(#symbol-tile)" opacity="0.35"/>
+    </svg>
+    <img src="/miso/banner.svg" alt="Miso" class="relative w-64 sm:w-80 md:w-96 lg:w-xl" />
   </header>
+
+  <script>
+    const pattern = document.getElementById('symbol-tile')!;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!reducedMotion) {
+      let tx = 0, ty = 0, cx = 0, cy = 0;
+      let rafId: number | null = null;
+
+      function tick() {
+        const dx = tx - cx, dy = ty - cy;
+        cx += dx * 0.07;
+        cy += dy * 0.07;
+        pattern.setAttribute('patternTransform', `rotate(-13.9) translate(${cx} ${cy})`);
+        rafId = (Math.abs(dx) > 0.05 || Math.abs(dy) > 0.05)
+          ? requestAnimationFrame(tick)
+          : null;
+      }
+
+      window.addEventListener('mousemove', (e) => {
+        tx = (e.clientX / window.innerWidth  - 0.5) * 40;
+        ty = (e.clientY / window.innerHeight - 0.5) * 40;
+        if (!rafId) rafId = requestAnimationFrame(tick);
+      });
+    }
+  </script>
 
   <main class="mx-auto max-w-4xl px-6 pb-16">
     <p class="text-xl text-ctp-subtext1">
