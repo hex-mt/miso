@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(.8845 0 0 .8845 8.9807 6.1916)" fill="#74aaf1" fill-rule="evenodd">
+  <g transform="matrix(.79036 0 0 .79036 -44.441 -35.111)">
+   <path d="m56.229 63.039v20.969c0 10.994 9.0065 20 20 20s20-9.0065 20-20v-20.969m-10 0v20.969c0 5.6266-4.3734 10.002-10 10.002s-10-4.3754-10-10.002v-20.969" stop-color="#000000" style="paint-order:fill markers stroke"/>
+   <path d="m56.229 54.554h10v7.3847h-10z" style="paint-order:fill markers stroke"/>
+   <path d="m86.229 54.554h10v7.3847h-10z" style="paint-order:fill markers stroke"/>
+   <path transform="matrix(.71565 0 0 .71565 13.963 32.359)" d="m89.004 16.966-11.353 16.736a0.6099 0.6099 62.075 0 0 0.50474 0.95228h7.4083a0.67151 0.67151 50.002 0 1 0.6613 0.78817l-1.665 9.438a0.24615 0.24615 22.079 0 0 0.4461 0.18095l11.353-16.734a0.60987 0.60987 62.077 0 0-0.50469-0.95225h-7.3915a0.68417 0.68417 49.997 0 1-0.67379-0.8029l1.6608-9.4252a0.24624 0.24624 22.072 0 0-0.44628-0.18096z" style="paint-order:fill markers stroke"/>
+  </g>
+  <path transform="matrix(.48695 0 0 .48695 -51.814 7.3953)" d="m144.36 153.41h-10.987l-5.4937-9.5154 5.4937-9.5154h10.987l5.4937 9.5154z" style="paint-order:fill markers stroke"/>
+  <path transform="matrix(.45789 0 0 .45789 61.17 -54.17)" d="m43.699 190.8h-24.339l-12.169-21.078 12.169-21.078 24.339 1e-5 12.169 21.078z" style="paint-order:fill markers stroke"/>
+  <g transform="translate(-49.258 22.466)">
+   <path d="m131.94 39.604c-4.5892 0-8.3223 3.735-8.3223 8.3242v14.145c0 3.2474-2.5748 5.8242-5.8223 5.8242s-5.8223-2.5768-5.8223-5.8242v-14.145h-2.5v14.145c0 4.5892 3.7331 8.3242 8.3223 8.3242 4.5892 0 8.3223-3.735 8.3223-8.3242v-14.145c0-3.2474 2.5748-5.8242 5.8223-5.8242s5.8223 2.5768 5.8223 5.8242v14.145h2.5v-14.145c0-4.5892-3.7331-8.3242-8.3223-8.3242z" stop-color="#000000" style="paint-order:fill markers stroke"/>
+   <path d="m108.46 37.881h4.5285a0.73574 0.73574 45 0 1 0.73574 0.73574v7.9824a0.73574 0.73574 135 0 1-0.73574 0.73574h-4.5285a0.73574 0.73574 45 0 1-0.73574-0.73574v-7.9824a0.73574 0.73574 135 0 1 0.73574-0.73574z" stroke-width="1.0134" style="paint-order:fill markers stroke"/>
+   <path transform="translate(28.289 24.784)" d="m108.46 37.881h4.5285a0.73574 0.73574 45 0 1 0.73574 0.73574v7.9824a0.73574 0.73574 135 0 1-0.73574 0.73574h-4.5285a0.73574 0.73574 45 0 1-0.73574-0.73574v-7.9824a0.73574 0.73574 135 0 1 0.73574-0.73574z" stroke-width="1.0134" style="paint-order:fill markers stroke"/>
+   <rect x="108.97" y="33.408" width="3.5" height="3.8801" ry="0" style="paint-order:fill markers stroke"/>
+   <rect transform="scale(1,-1)" x="137.26" y="-76.592" width="3.5" height="3.8801" ry="0" style="paint-order:fill markers stroke"/>
+  </g>
+ </g>
+</svg>
