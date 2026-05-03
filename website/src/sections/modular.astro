@@ -12,24 +12,24 @@
 
 <section class="relative flex flex-col items-center gap-8 overflow-hidden px-6 py-16 text-center" style="background-color:#5a9dea">
   <canvas id="modular-canvas" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
-  <div class="relative w-4xl rounded-xl overflow-hidden [box-shadow:0_0_0_16px_#0d6fab33]">
-    <div class="w-full bg-[#032742] px-16 flex justify-center">
+  <div class="relative w-full max-w-4xl rounded-xl overflow-hidden [box-shadow:0_0_0_8px_#0d6fab33] sm:[box-shadow:0_0_0_16px_#0d6fab33]">
+    <div class="w-full bg-[#032742] px-6 sm:px-16 flex justify-center">
       <h2 class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.1em] sm:text-3xl md:text-4xl 2xl:text-5xl">connect them together</h2>
     </div>
-    <div class="w-full bg-[#0d6fab] p-8 flex flex-col items-center gap-8">
+    <div class="w-full bg-[#0d6fab] p-4 sm:p-8 flex flex-col items-center gap-6 sm:gap-8">
       <p class="relative max-w-2xl font-nunito font-semibold text-base leading-relaxed text-white/90 sm:text-lg 2xl:text-xl">Each Miso unit can function as a standalone MIDI controller or magnetically snap together with other units to form a larger instrument.</p>
-      <img src="/miso/modular-image.svg" alt="" class="relative max-w-3xl w-full" />
-      <div class="flex gap-8">
-        <div class="relative flex items-center justify-center bg-[#28ace3] w-20 h-20 rounded-xl border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
-          <img src="/miso/usb-c.svg" alt="USB-C" class="w-14 h-14" />
+      <img src="/miso/modular-image.svg" alt="" class="relative w-full" />
+      <div class="flex items-center gap-3 sm:gap-6 md:gap-8">
+        <div class="relative flex items-center justify-center bg-[#28ace3] w-14 h-14 sm:w-20 sm:h-20 rounded-lg sm:rounded-xl border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
+          <img src="/miso/usb-c.svg" alt="USB-C" class="w-10 h-10 sm:w-14 sm:h-14" />
         </div>
-        <span class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.3em] sm:text-3xl md:text-4xl 2xl:text-5xl">+</span>
-        <div class="relative flex items-center justify-center bg-[#28ace3] w-20 h-20 rounded-xl border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
-          <img src="/miso/I2C.svg" alt="I2C" class="w-14 h-14" />
+        <span class="boil-label-modular relative font-daruma text-xl leading-loose text-white translate-y-[-0.3em] sm:text-2xl md:text-3xl 2xl:text-4xl">+</span>
+        <div class="relative flex items-center justify-center bg-[#28ace3] w-14 h-14 sm:w-20 sm:h-20 rounded-lg sm:rounded-xl border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
+          <img src="/miso/I2C.svg" alt="I2C" class="w-10 h-10 sm:w-14 sm:h-14" />
         </div>
-        <span class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.3em] sm:text-3xl md:text-4xl 2xl:text-5xl">→</span>
-        <div class="relative flex items-center justify-center bg-[#28ace3] w-20 h-20 rounded-xl border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
-          <img src="/miso/midi.svg" alt="I2C" class="w-16 h-16" />
+        <span class="boil-label-modular relative font-daruma text-xl leading-loose text-white translate-y-[-0.3em] sm:text-2xl md:text-3xl 2xl:text-4xl">→</span>
+        <div class="relative flex items-center justify-center bg-[#28ace3] w-14 h-14 sm:w-20 sm:h-20 rounded-lg sm:rounded-xl border-2 border-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
+          <img src="/miso/midi.svg" alt="I2C" class="w-11 h-11 sm:w-16 sm:h-16" />
         </div>
       </div>
     </div>
