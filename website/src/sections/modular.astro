@@ -63,7 +63,7 @@
     drawFn?.();
   }
   resize();
-  window.addEventListener('resize', resize);
+  new ResizeObserver(resize).observe(section);
 
   const img = new Image();
   img.src = '/miso/modular-bg.svg';
