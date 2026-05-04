@@ -1,0 +1,112 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <filter id="boil-text-modular" x="-5%" y="-10%" width="110%" height="120%">
+      <feTurbulence baseFrequency="0.025" numOctaves="2" result="noise" seed="1">
+        <animate attributeName="baseFrequency" calcMode="discrete" dur="0.8s" repeatCount="indefinite" values="0.025;0.020;0.030;0.022;0.028;0.018;0.032;0.021;0.027;0.024"/>
+        <animate attributeName="seed" calcMode="discrete" dur="0.8s" repeatCount="indefinite" values="1;4;7;2;9;5;3;8;6;0"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<section class="relative flex flex-col items-center gap-8 overflow-hidden px-6 py-16 text-center pb-16 sm:pb-26 lg:pb-32" style="background-color:#7CDF90">
+  <canvas id="microtonal-canvas" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
+  <div class="relative w-full max-w-4xl rounded-xl overflow-hidden [box-shadow:0_0_0_8px_#24943A33] sm:[box-shadow:0_0_0_16px_#24943A33]">
+    <div class="w-full bg-[#10421A] px-6 sm:px-16 flex justify-center">
+      <h2 class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.1em] sm:text-3xl md:text-4xl 2xl:text-5xl">explore new worlds</h2>
+    </div>
+    <div class="w-full bg-[#24943A] p-4 sm:p-8 flex flex-col items-center gap-6 sm:gap-8">
+        <p class="relative max-w-2xl font-nunito font-semibold text-base leading-relaxed text-white/90 sm:text-lg 2xl:text-xl">Generalised keyboards like Miso are ideal for playing with alternative tunings, whether you want to explore just intonation, EDOs and tempered systems, or new tunings of your own imagination.</p>
+      <img src="/miso/microtonal-image.svg" alt="" class="relative w-xl" />
+    </div>
+  </div>
+</section>
+
+<script>
+  const canvas = document.getElementById('microtonal-canvas') as HTMLCanvasElement;
+  const section = canvas.parentElement!;
+  const ctx     = canvas.getContext('2d')!;
+  const dpr     = Math.min(devicePixelRatio, 2);
+  const tilePx  = 450 * dpr;
+
+  function tileScale(): number {
+    const w = window.innerWidth;
+    if (w >= 1536) return 0.5;
+    if (w >= 768)  return 384 / 576 * 0.5;
+    if (w >= 640)  return 320 / 576 * 0.5;
+    return 256 / 576 * 0.5;
+  }
+
+  const ang  = -16.1 * Math.PI / 180;
+  const cosA = Math.cos(ang);
+  const sinA = Math.sin(ang);
+
+  let drawFn: (() => void) | null = null;
+
+  function resize() {
+    canvas.width  = Math.round(section.clientWidth  * dpr);
+    canvas.height = Math.round(section.clientHeight * dpr);
+    drawFn?.();
+  }
+  resize();
+  new ResizeObserver(resize).observe(section);
+
+  const img = new Image();
+  img.src = '/miso/microtonal-bg.svg';
+  img.onload = () => {
+    const offscreen = document.createElement('canvas');
+    offscreen.width  = tilePx;
+    offscreen.height = tilePx;
+    offscreen.getContext('2d')!.drawImage(img, 0, 0, tilePx, tilePx);
+
+    const pattern = ctx.createPattern(offscreen, 'repeat')!;
+    let cx = 0, cy = 0;
+
+    drawFn = () => {
+      const s = tileScale();
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      pattern.setTransform(new DOMMatrix([
+         s * cosA,  s * sinA,
+        -s * sinA,  s * cosA,
+        cx * dpr,  cy * dpr,
+      ]));
+      ctx.globalAlpha = 1.0;
+      ctx.fillStyle   = pattern;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    };
+    drawFn();
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reducedMotion) {
+      let tx = 0, ty = 0, rafId: number | null = null;
+
+      function tick() {
+        const dx = tx - cx, dy = ty - cy;
+        cx += dx * 0.07;
+        cy += dy * 0.07;
+        drawFn!();
+        rafId = (Math.abs(dx) > 0.05 || Math.abs(dy) > 0.05)
+          ? requestAnimationFrame(tick)
+          : null;
+      }
+
+      window.addEventListener('mousemove', (e) => {
+        tx = (e.clientX / window.innerWidth  - 0.5) * 40;
+        ty = (e.clientY / window.innerHeight - 0.5) * 40;
+        if (!rafId) rafId = requestAnimationFrame(tick);
+      });
+    }
+  };
+</script>
+
+<style>
+  .boil-label-modular {
+    filter: url(#boil-text-modular);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .boil-label-modular {
+      filter: none;
+    }
+  }
+</style>
