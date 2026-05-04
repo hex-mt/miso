@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="100" height="100" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
- <text x="55.257389" y="14.249118" fill="#9ce7ab" fill-rule="evenodd" font-family="'IBM Plex Sans'" font-size="14.581px" font-weight="600" letter-spacing="0px" stroke-linecap="round" stroke-width=".68347" style="line-height:1.2;paint-order:fill markers stroke" xml:space="preserve"><tspan x="55.257389" y="14.249118" font-size="14.581px" stroke-width=".68347">7</tspan></text>
- <text x="3.7961469" y="28.342962" fill="#9ce7ab" fill-rule="evenodd" font-family="'IBM Plex Sans'" font-size="27.436px" font-weight="600" letter-spacing="0px" stroke-linecap="round" stroke-width="1.2861" style="line-height:1.2;paint-order:fill markers stroke" xml:space="preserve"><tspan x="3.7961469" y="28.342962" font-size="27.436px" stroke-width="1.2861">2</tspan></text>
+ <path d="m59.734 14.249h-2.0122l3.5432-8.6174h-3.514v1.8664h-1.6331v-3.4265h7.0572v1.6477z" fill="#9ce7ab" fill-rule="evenodd" stroke-linecap="round" stroke-width=".68347" style="paint-order:fill markers stroke" aria-label="7"/>
+ <path d="m18.776 25.298v3.0454h-13.279v-3.3472l6.0085-5.2677q1.5364-1.3169 2.2498-2.4144t0.71334-2.3595v-0.35667q0-1.2621-0.82308-1.9205-0.82308-0.6859-2.0028-0.6859-1.4541 0-2.2498 0.85052-0.76821 0.82308-1.0974 2.0028l-3.1277-1.2072q0.41154-1.2895 1.2621-2.3595 0.85052-1.07 2.2223-1.7285 1.3718-0.6859 3.2923-0.6859 2.0303 0 3.4295 0.74077 1.4267 0.74077 2.1674 2.0303 0.74077 1.2621 0.74077 2.9357 0 1.5913-0.65846 2.8533-0.63103 1.2621-1.7559 2.3595-1.0974 1.0974-2.4144 2.1949l-4.0331 3.3198z" fill="#9ce7ab" fill-rule="evenodd" stroke-linecap="round" stroke-width="1.2861" style="paint-order:fill markers stroke" aria-label="2"/>
  <g transform="matrix(.69447 0 0 .69447 55.999 -41.648)">
-  <text x="11.374224" y="132.90623" fill="#9ce7ab" fill-rule="evenodd" font-family="'IBM Plex Sans'" font-size="32px" font-weight="600" letter-spacing="0px" stroke-linecap="round" stroke-width="1.5" style="line-height:1.2;paint-order:fill markers stroke" xml:space="preserve"><tspan x="11.374224" y="132.90623" font-size="32px">3</tspan></text>
+  <path d="m17.55 119.59h2.208q1.92 0 2.816-0.8 0.928-0.8 0.928-1.984v-0.224q0-1.376-0.896-2.144-0.896-0.8-2.4-0.8-1.472 0-2.624 0.704t-1.952 1.984l-2.688-2.432q0.768-1.056 1.76-1.888 1.024-0.832 2.368-1.312 1.376-0.512 3.264-0.512 2.24 0 3.936 0.736 1.728 0.704 2.688 2.016 0.96 1.28 0.96 3.072 0 2.144-1.28 3.456-1.248 1.28-3.008 1.632v0.192q1.312 0.224 2.368 0.928 1.056 0.672 1.664 1.792 0.64 1.12 0.64 2.72 0 1.952-1.056 3.456-1.024 1.472-2.88 2.304-1.824 0.8-4.288 0.8-2.176 0-3.68-0.576t-2.528-1.536-1.728-2.048l3.104-2.368q0.768 1.344 1.856 2.208 1.12 0.864 2.976 0.864t2.848-0.896q0.992-0.928 0.992-2.464v-0.224q0-1.536-1.088-2.336t-3.072-0.8h-2.208z" fill="#9ce7ab" fill-rule="evenodd" stroke-linecap="round" stroke-width="1.5" style="paint-order:fill markers stroke" aria-label="3"/>
  </g>
- <g fill="#9ce7ab" fill-rule="evenodd" font-family="'IBM Plex Sans'" font-weight="600" letter-spacing="0px" stroke-linecap="round">
-  <text x="48.733616" y="89.699135" font-size="18.001px" stroke-width=".84378" style="line-height:1.2;paint-order:fill markers stroke" xml:space="preserve"><tspan x="48.733616" y="89.699135" stroke-width=".84378">5</tspan></text>
-  <text x="9.6400261" y="58.63031" font-size="11.81px" stroke-width=".55361" style="line-height:1.2;paint-order:fill markers stroke" xml:space="preserve"><tspan x="9.6400261" y="58.63031" stroke-width=".55361">11</tspan></text>
-  <text x="82.229538" y="92.462807" font-size="9.5664px" stroke-width=".44842" style="line-height:1.2;paint-order:fill markers stroke" xml:space="preserve"><tspan x="82.229538" y="92.462807" stroke-width=".44842">13</tspan></text>
+ <g fill="#9ce7ab" fill-rule="evenodd" stroke-linecap="round">
+  <path d="m58.004 77.134v2.0521h-5.6523l-0.28802 4.2122h0.12601q0.27002-0.54003 0.59403-0.93605 0.34202-0.41402 0.82805-0.64804 0.50403-0.23401 1.2421-0.23401 1.0801 0 1.9441 0.48603 0.86405 0.46803 1.3681 1.3501 0.52203 0.88205 0.52203 2.1421t-0.54003 2.2501q-0.54003 0.97205-1.5841 1.5481-1.0441 0.55803-2.5201 0.55803-1.1521 0-1.9801-0.32402t-1.4041-0.86405q-0.55803-0.54003-0.93605-1.1521l1.7281-1.3321q0.43202 0.72004 1.0081 1.2241t1.6021 0.50403q1.0621 0 1.6021-0.59403 0.55803-0.59403 0.55803-1.6201v-0.14401q0-0.97205-0.55803-1.5301t-1.5481-0.55803q-0.77404 0-1.2601 0.30602-0.48603 0.28802-0.77404 0.63004l-1.9441-0.27002 0.46803-7.0564z" stroke-width=".84378" style="paint-order:fill markers stroke" aria-label="5"/>
+  <path d="m16.372 58.63h-5.6452v-1.2637h2.2439v-5.8578h-0.09448l-1.7951 2.1258-0.96842-0.81489 2.0313-2.4329h2.3738v6.9797h1.8542zm7.086 0h-5.6452v-1.2637h2.2439v-5.8578h-0.09448l-1.7951 2.1258-0.96842-0.81489 2.0313-2.4329h2.3738v6.9797h1.8542z" stroke-width=".55361" style="paint-order:fill markers stroke" aria-label="11"/>
+  <path d="m87.682 92.463h-4.5727v-1.0236h1.8176v-4.7449h-0.07653l-1.4541 1.722-0.78444-0.66008 1.6454-1.9707h1.9228v5.6537h1.5019zm2.1333-3.9796h0.66008q0.57398 0 0.84184-0.23916 0.27743-0.23916 0.27743-0.59312v-0.06696q0-0.41136-0.26786-0.64095-0.26786-0.23916-0.71748-0.23916-0.44006 0-0.78444 0.21046-0.34439 0.21046-0.58355 0.59312l-0.80358-0.72705q0.22959-0.31569 0.52615-0.56442 0.30612-0.24873 0.70791-0.39222 0.41136-0.15306 0.97577-0.15306 0.66965 0 1.1767 0.22003 0.51659 0.21046 0.80358 0.60268 0.28699 0.38266 0.28699 0.91838 0 0.64095-0.38266 1.0332-0.37309 0.38266-0.89924 0.48789v0.0574q0.39222 0.06696 0.70791 0.27742 0.31569 0.2009 0.49745 0.53572 0.19133 0.33482 0.19133 0.81314 0 0.58355-0.31569 1.0332-0.30612 0.44005-0.86098 0.68878-0.54528 0.23916-1.2819 0.23916-0.65052 0-1.1001-0.1722t-0.75575-0.45919q-0.30612-0.28699-0.51658-0.61225l0.92794-0.70791q0.22959 0.40179 0.55485 0.66008 0.33482 0.25829 0.88968 0.25829t0.85141-0.26786q0.29656-0.27742 0.29656-0.73661v-0.06696q0-0.45919-0.32526-0.69835-0.32526-0.23916-0.91837-0.23916h-0.66008z" stroke-width=".44842" style="paint-order:fill markers stroke" aria-label="13"/>
  </g>
  <g fill="none" stroke="#9ce7ab">
   <g transform="matrix(.26171 0 0 .26171 73.218 6.29)" stroke-linecap="round" stroke-width="3.276">
@@ -19,30 +19,32 @@
     <path d="m83.872 59.419-33.872-19.556" style="paint-order:fill markers stroke"/>
    </g>
   </g>
-  <g transform="matrix(.15499 0 0 .15499 18.376 86.703)" stroke-linejoin="round" stroke-width="5.5319">
-   <path d="m146.33-235.15 32.705-5.8655 38.681 4.4422-2.8171 45.129-26.557 19.787-38.734-15.706z" style="paint-order:fill markers stroke"/>
-   <path d="m146.33-235.15 42.693 7.2593" style="paint-order:fill markers stroke"/>
-   <path d="m217.82-236.65-28.794 8.8224" style="paint-order:fill markers stroke"/>
-   <path d="m188.34-171.66 0.80905-56.158" style="paint-order:fill markers stroke"/>
-  </g>
-  <g transform="matrix(.19235 0 0 .19235 17.805 49.121)" stroke-linejoin="round" stroke-width="4.4573">
-   <path d="m73.164-142.27 38.398-41.493 36.269 37.475-35.345 37.363z" style="paint-order:fill markers stroke"/>
-   <path d="m111.56-183.76 11.27 48.967-10.63 25.655" style="paint-order:fill markers stroke"/>
-   <path d="m73.164-142.27 49.668 7.4745 24.775-11.311" style="paint-order:fill markers stroke"/>
-  </g>
-  <g transform="matrix(.21294 0 0 .21294 83.477 83.635)" stroke-linejoin="round" stroke-width="4.0264">
-   <path d="m-8.078-94.471 9.7984-25.788 14.012-10.012 29.067-2.7615 20.53 20.756 3.8403 16.469-9.1809 26.265-12.348 7.6323-30.626 4.4055-20.339-23.056z" style="paint-order:fill markers stroke"/>
-   <path d="m15.626-130.47-1.1706 26.161-17.705 23.788" style="paint-order:fill markers stroke"/>
-   <path d="m65.139-112.32-15.342 20.834-2.1711 29.309" style="paint-order:fill markers stroke"/>
-   <path d="m14.4-104.4 35.397 12.912" style="paint-order:fill markers stroke"/>
-  </g>
-  <g transform="matrix(.20935 0 0 .20935 -25.478 109.13)" stroke-linejoin="round" stroke-width="4.0955">
-   <path d="m151.47-119.07 28.351-15.475 18.142 0.29346 20.611 13.013 8.2316 28.653-29.936 36.055-43.511-16.143z" style="paint-order:fill markers stroke"/>
-   <path d="m151.35-118.98 46.231-15.238" style="paint-order:fill markers stroke"/>
-   <path d="m151.35-118.98 28.253 30.816 17.978-46.054" style="paint-order:fill markers stroke"/>
-   <path d="m153.36-72.679 26.245-15.481 17.143 31.454" style="paint-order:fill markers stroke"/>
-   <path d="m198.02-134.22 28.748 41.217" style="paint-order:fill markers stroke"/>
-   <path d="m179.61-88.16 47.202-4.4309" style="paint-order:fill markers stroke"/>
+  <g stroke-linejoin="round">
+   <g transform="matrix(.15499 0 0 .15499 18.376 86.703)" stroke-width="5.5319">
+    <path d="m146.33-235.15 32.705-5.8655 38.681 4.4422-2.8171 45.129-26.557 19.787-38.734-15.706z" style="paint-order:fill markers stroke"/>
+    <path d="m146.33-235.15 42.693 7.2593" style="paint-order:fill markers stroke"/>
+    <path d="m217.82-236.65-28.794 8.8224" style="paint-order:fill markers stroke"/>
+    <path d="m188.34-171.66 0.80905-56.158" style="paint-order:fill markers stroke"/>
+   </g>
+   <g transform="matrix(.19235 0 0 .19235 17.805 49.121)" stroke-width="4.4573">
+    <path d="m73.164-142.27 38.398-41.493 36.269 37.475-35.345 37.363z" style="paint-order:fill markers stroke"/>
+    <path d="m111.56-183.76 11.27 48.967-10.63 25.655" style="paint-order:fill markers stroke"/>
+    <path d="m73.164-142.27 49.668 7.4745 24.775-11.311" style="paint-order:fill markers stroke"/>
+   </g>
+   <g transform="matrix(.21294 0 0 .21294 83.477 83.635)" stroke-width="4.0264">
+    <path d="m-8.078-94.471 9.7984-25.788 14.012-10.012 29.067-2.7615 20.53 20.756 3.8403 16.469-9.1809 26.265-12.348 7.6323-30.626 4.4055-20.339-23.056z" style="paint-order:fill markers stroke"/>
+    <path d="m15.626-130.47-1.1706 26.161-17.705 23.788" style="paint-order:fill markers stroke"/>
+    <path d="m65.139-112.32-15.342 20.834-2.1711 29.309" style="paint-order:fill markers stroke"/>
+    <path d="m14.4-104.4 35.397 12.912" style="paint-order:fill markers stroke"/>
+   </g>
+   <g transform="matrix(.20935 0 0 .20935 -25.478 109.13)" stroke-width="4.0955">
+    <path d="m151.47-119.07 28.351-15.475 18.142 0.29346 20.611 13.013 8.2316 28.653-29.936 36.055-43.511-16.143z" style="paint-order:fill markers stroke"/>
+    <path d="m151.35-118.98 46.231-15.238" style="paint-order:fill markers stroke"/>
+    <path d="m151.35-118.98 28.253 30.816 17.978-46.054" style="paint-order:fill markers stroke"/>
+    <path d="m153.36-72.679 26.245-15.481 17.143 31.454" style="paint-order:fill markers stroke"/>
+    <path d="m198.02-134.22 28.748 41.217" style="paint-order:fill markers stroke"/>
+    <path d="m179.61-88.16 47.202-4.4309" style="paint-order:fill markers stroke"/>
+   </g>
   </g>
  </g>
 </svg>
