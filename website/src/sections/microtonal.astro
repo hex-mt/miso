@@ -17,7 +17,7 @@
       <h2 class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.1em] sm:text-3xl md:text-4xl 2xl:text-5xl">explore new worlds</h2>
     </div>
     <div class="w-full bg-[#24943A] p-4 sm:p-8 flex flex-col items-center gap-6 sm:gap-8">
-        <p class="relative max-w-2xl font-nunito font-semibold text-base leading-relaxed text-white/90 sm:text-lg 2xl:text-xl">Generalised keyboards like Miso are ideal for playing with alternative tunings, whether you want to explore just intonation, EDOs and tempered systems, or new tunings of your own imagination.</p>
+        <p class="relative max-w-2xl font-nunito font-semibold text-base leading-relaxed text-white/90 sm:text-lg 2xl:text-xl">Generalised keyboards are an ideal interface for playing with alternative tunings. Whether you want to explore just intonation, EDOs and tempered systems, or new tunings of your own imagination, making mappings for Miso is easy!</p>
       <img src="/miso/microtonal-image.svg" alt="" class="relative w-xl" />
     </div>
   </div>
@@ -32,10 +32,10 @@
 
   function tileScale(): number {
     const w = window.innerWidth;
-    if (w >= 1536) return 0.5;
-    if (w >= 768)  return 384 / 576 * 0.5;
-    if (w >= 640)  return 320 / 576 * 0.5;
-    return 256 / 576 * 0.5;
+    if (w >= 1536) return 0.7;
+    if (w >= 768)  return 384 / 576 * 0.7;
+    if (w >= 640)  return 320 / 576 * 0.7;
+    return 256 / 576 * 0.7;
   }
 
   const ang  = -16.1 * Math.PI / 180;
@@ -77,7 +77,10 @@
     };
     drawFn();
 
+    const svg = section.previousElementSibling as SVGSVGElement;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let onMouseMove: ((e: MouseEvent) => void) | null = null;
     if (!reducedMotion) {
       let tx = 0, ty = 0, rafId: number | null = null;
 
@@ -91,12 +94,22 @@
           : null;
       }
 
-      window.addEventListener('mousemove', (e) => {
+      onMouseMove = (e: MouseEvent) => {
         tx = (e.clientX / window.innerWidth  - 0.5) * 40;
         ty = (e.clientY / window.innerHeight - 0.5) * 40;
         if (!rafId) rafId = requestAnimationFrame(tick);
-      });
+      };
     }
+
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        svg.unpauseAnimations();
+        if (onMouseMove) window.addEventListener('mousemove', onMouseMove);
+      } else {
+        svg.pauseAnimations();
+        if (onMouseMove) window.removeEventListener('mousemove', onMouseMove);
+      }
+    }, { threshold: 0 }).observe(section);
   };
 </script>
 

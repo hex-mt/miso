@@ -92,7 +92,10 @@
     };
     drawFn();
 
+    const svg = header.previousElementSibling as SVGSVGElement;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let onMouseMove: ((e: MouseEvent) => void) | null = null;
     if (!reducedMotion) {
       let tx = 0, ty = 0, rafId: number | null = null;
 
@@ -106,12 +109,22 @@
           : null;
       }
 
-      window.addEventListener('mousemove', (e) => {
+      onMouseMove = (e: MouseEvent) => {
         tx = (e.clientX / window.innerWidth  - 0.5) * 40;
         ty = (e.clientY / window.innerHeight - 0.5) * 40;
         if (!rafId) rafId = requestAnimationFrame(tick);
-      });
+      };
     }
+
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        svg.unpauseAnimations();
+        if (onMouseMove) window.addEventListener('mousemove', onMouseMove);
+      } else {
+        svg.pauseAnimations();
+        if (onMouseMove) window.removeEventListener('mousemove', onMouseMove);
+      }
+    }, { threshold: 0 }).observe(header);
   };
 </script>
 
