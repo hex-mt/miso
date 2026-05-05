@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="h" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="f" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="e" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="g" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="a" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" overflow="visible" markerHeight="0.75" markerWidth="0.75" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+   <path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g fill="#ffe699" fill-rule="evenodd" stroke-linecap="square" stroke-width="20">
+  <path transform="matrix(.35612 .2056 -.2056 .35612 17.693 -13.323)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(-.13048 .48697 -.48697 -.13048 97.479 8.3919)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(.31847 .18387 -.18387 .31847 42.297 13.985)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(.5323 .5323 -.5323 .5323 32.614 16.233)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(.43462 .43462 -.43462 .43462 104.07 .26869)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(.35648 .35648 -.35648 .35648 101.46 55.987)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(.50414 0 0 .50414 51.157 32.213)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+  <path transform="matrix(.48697 .13048 -.13048 .48697 34.564 54.205)" d="m38.558 53.38v13.532l-11.719 6.7659-11.719-6.7659v-13.532l11.719-6.7659z"/>
+ </g>
+ <g transform="translate(2.852 -1.6576)" fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width=".99624">
+  <path d="m39.786 13.614v8.6656" marker-end="url(#h)"/>
+  <path d="m39.786 13.614-6.1275-6.1275" marker-end="url(#h)"/>
+ </g>
+ <g transform="translate(-2.6201 .70711)" fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width=".90822">
+  <path d="m63.981 37.367 5.5862-5.5862" marker-end="url(#c)"/>
+  <path d="m63.981 37.367 5.5862 5.5862" marker-end="url(#c)"/>
+ </g>
+ <g transform="translate(-.28566 7.3137)" fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width="1.2839">
+  <path d="m88.882 12.907-2.8904-10.787" marker-end="url(#f)"/>
+  <path d="m88.882 12.907 5.5838-9.6715" marker-end="url(#f)"/>
+ </g>
+ <g fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width=".83907">
+  <path d="m14.884 38.074 6.3207 3.6492" marker-end="url(#e)"/>
+  <path d="m14.884 38.074-6.3207-3.6492" marker-end="url(#e)"/>
+ </g>
+ <g transform="translate(.70711 -5.1708)" fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width="1.2839">
+  <path d="m39.079 61.828-5.5838 9.6715" marker-end="url(#g)"/>
+  <path d="m39.079 61.828 5.5838 9.6715" marker-end="url(#g)"/>
+ </g>
+ <g transform="translate(-2.3481 1.3647)" fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width=".82021">
+  <path d="m89.589 62.535v-7.1345" marker-end="url(#b)"/>
+  <path d="m89.589 62.535 5.0448 5.0448" marker-end="url(#b)"/>
+ </g>
+ <g transform="translate(4.4867)" fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width="1.2247">
+  <path d="m14.884 86.996-7.533 7.533" marker-end="url(#a)"/>
+  <path d="m14.884 86.996-7.533-7.533" marker-end="url(#a)"/>
+ </g>
+ <g fill="#ffe699" fill-rule="evenodd" stroke="#ffe699" stroke-linecap="square" stroke-width="1.0396">
+  <path d="m64.688 86.996-4.5212 7.8309" marker-end="url(#d)"/>
+  <path d="m64.688 86.996 4.5212-7.8309" marker-end="url(#d)"/>
+ </g>
+</svg>

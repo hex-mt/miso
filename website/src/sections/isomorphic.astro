@@ -1,6 +1,6 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <filter id="boil-text-microtonal" x="-5%" y="-10%" width="110%" height="120%">
+    <filter id="boil-text-isomorphic" x="-5%" y="-10%" width="110%" height="120%">
       <feTurbulence baseFrequency="0.025" numOctaves="2" result="noise" seed="1">
         <animate attributeName="baseFrequency" calcMode="discrete" dur="0.8s" repeatCount="indefinite" values="0.025;0.020;0.030;0.022;0.028;0.018;0.032;0.021;0.027;0.024"/>
         <animate attributeName="seed" calcMode="discrete" dur="0.8s" repeatCount="indefinite" values="1;4;7;2;9;5;3;8;6;0"/>
@@ -10,21 +10,21 @@
   </defs>
 </svg>
 
-<section class="relative flex flex-col items-center gap-8 overflow-hidden px-6 py-16 text-center" style="background-color:#7CDF90">
-  <canvas id="microtonal-canvas" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
-  <div class="relative w-full max-w-4xl rounded-xl overflow-hidden [box-shadow:0_0_0_8px_#24943A33] sm:[box-shadow:0_0_0_16px_#24943A33]">
-    <div class="w-full bg-[#10421A] px-6 sm:px-16 flex justify-center">
-      <h2 class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.1em] sm:text-3xl md:text-4xl 2xl:text-5xl">explore new worlds</h2>
+<section class="relative flex flex-col items-center gap-8 overflow-hidden px-6 py-16 text-center pb-16 sm:pb-26 lg:pb-32" style="background-color:#FFDB70">
+  <canvas id="isomorphic-canvas" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
+  <div class="relative w-full max-w-4xl rounded-xl overflow-hidden [box-shadow:0_0_0_8px_#E0A80033] sm:[box-shadow:0_0_0_16px_#E0A80033]">
+    <div class="w-full bg-[#523D00] px-6 sm:px-16 flex justify-center">
+      <h2 class="boil-label-modular relative font-daruma text-2xl leading-loose text-white translate-y-[-0.1em] sm:text-3xl md:text-4xl 2xl:text-5xl">ctrl-c ctrl-v fingerings</h2>
     </div>
-    <div class="w-full bg-[#24943A] p-4 sm:p-8 flex flex-col items-center gap-6 sm:gap-8">
-        <p class="relative max-w-2xl font-nunito font-semibold text-base leading-relaxed text-white/90 sm:text-lg 2xl:text-xl">Generalised keyboards are an ideal interface for playing with alternative tunings. Whether you want to explore just intonation, EDOs and tempered systems, or new tunings of your own imagination, making mappings for Miso is easy!</p>
-      <img src="/miso/microtonal-image.svg" alt="" class="relative h-xl" />
+    <div class="w-full bg-[#E0A800] p-4 sm:p-8 flex flex-col items-center gap-6 sm:gap-8">
+        <p class="relative max-w-2xl font-nunito font-semibold text-base leading-relaxed text-white/90 sm:text-lg 2xl:text-xl">With isomorphic layouts, chord and scale shapes are uniform everywhere, so you only have to learn one fingering.</p>
+      <img src="/miso/isomorphic-image.svg" alt="" class="relative w-lg" />
     </div>
   </div>
 </section>
 
 <script>
-  const canvas = document.getElementById('microtonal-canvas') as HTMLCanvasElement;
+  const canvas = document.getElementById('isomorphic-canvas') as HTMLCanvasElement;
   const section = canvas.parentElement!;
   const ctx     = canvas.getContext('2d')!;
   const dpr     = Math.min(devicePixelRatio, 2);
@@ -53,7 +53,7 @@
   new ResizeObserver(resize).observe(section);
 
   const img = new Image();
-  img.src = '/miso/microtonal-bg.svg';
+  img.src = '/miso/isomorphic-bg.svg';
   img.onload = () => {
     const offscreen = document.createElement('canvas');
     offscreen.width  = tilePx;
@@ -115,7 +115,7 @@
 
 <style>
   .boil-label-modular {
-    filter: url(#boil-text-microtonal);
+    filter: url(#boil-text-isomorphic);
   }
   @media (prefers-reduced-motion: reduce) {
     .boil-label-modular {
