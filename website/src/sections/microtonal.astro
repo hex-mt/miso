@@ -32,10 +32,10 @@
 
   function tileScale(): number {
     const w = window.innerWidth;
-    if (w >= 1536) return 0.7;
-    if (w >= 768)  return 384 / 576 * 0.7;
-    if (w >= 640)  return 320 / 576 * 0.7;
-    return 256 / 576 * 0.7;
+    if (w >= 1536) return 1.05;
+    if (w >= 768)  return 384 / 576 * 1.0;
+    if (w >= 640)  return 320 / 576 * 1.0;
+    return 256 / 576 * 1.05;
   }
 
   const ang  = -16.1 * Math.PI / 180;
